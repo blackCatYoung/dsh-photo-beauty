@@ -1,0 +1,4 @@
+- insert:
+    - id: dsh-photo-beauty
+      name: 'dsh-photo-beauty'
+      config: {}

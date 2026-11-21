@@ -1,0 +1,46 @@
+{
+  "name": "dsh-photo-beauty",
+  "version": "0.4.2",
+  "private": false,
+  "description": "Local portrait retouch for DeepSeek Harness: skin smoothing, tone, slimming, eyes and makeup, plus deterministic on-device parameter suggestions.",
+  "type": "module",
+  "main": "lib/index.js",
+  "icon": "icon.svg",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib/",
+    "engine/beauty.py",
+    "engine/requirements.txt",
+    "engine/models/",
+    "scripts/setup-engine.sh",
+    "icon.svg",
+    "cordis.patch.yml",
+    "README.md",
+    "engine/beauty_metrics.py",
+    "skills/"
+  ],
+  "dsh": {
+    "manifestVersion": 1,
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": []
+    }
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "license": "MIT",
+  "scripts": {
+    "test": "node test/host-smoke.mjs && node test/client-smoke.mjs && node test/save-smoke.mjs && node test/multi-smoke.mjs && node test/ai-smoke.mjs",
+    "test:engine": ".venv/bin/python -m unittest discover -s test",
+    "preview": "node test/workbench-preview.mjs"
+  }
+}
