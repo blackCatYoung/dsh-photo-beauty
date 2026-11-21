@@ -1,6 +1,6 @@
 {
   "name": "dsh-photo-beauty",
-  "version": "0.4.2",
+  "version": "0.4.3",
   "private": false,
   "description": "Local portrait retouch for DeepSeek Harness: skin smoothing, tone, slimming, eyes and makeup, plus deterministic on-device parameter suggestions.",
   "type": "module",
@@ -12,6 +12,8 @@
     "./package.json": "./package.json"
   },
   "files": [
+    "LICENSES/",
+    "THIRD-PARTY-NOTICES.md",
     "lib/",
     "engine/beauty.py",
     "engine/requirements.txt",

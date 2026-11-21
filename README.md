@@ -257,3 +257,7 @@ npm run preview                 # 起本地预览服务，浏览器打开打印�
 - 化妆只认五官位置，不知道眼皮厚薄和双眼皮褶皱走向：笑眯眼、闭眼时浓眼影/眼线可能压到镜框上，调低强度最省事。
 - 口红按唇形整片染色，咬唇、渐变唇这种只在唇内侧上色的画法不支持。
 - 4K 原图全分辨率渲染约 2–4 秒（7008×4672 实测 2.4 秒）。
+
+## 许可
+
+本项目自己写的代码用 **MIT** 许可（[LICENSE](LICENSE)）。`engine/models/` 里的两个模型（人脸网格 + 人像分割）是 Google MediaPipe 的模型，以 **Apache 2.0** 分发，来源、SHA-256、官方下载地址和归属都写在 [THIRD-PARTY-NOTICES.md](THIRD-PARTY-NOTICES.md)，许可证全文在 [LICENSES/Apache-2.0.txt](LICENSES/Apache-2.0.txt)。模型是原样打包的、没有做任何修改；本项目与 Google 没有隶属或背书关系。
