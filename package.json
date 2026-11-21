@@ -35,9 +35,28 @@
     }
   },
   "engines": {
-    "node": ">=22"
+    "node": ">=22",
+    "dsh": ">=0.2.0"
   },
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/blackCatYoung/dsh-photo-beauty.git"
+  },
+  "homepage": "https://github.com/blackCatYoung/dsh-photo-beauty#readme",
+  "bugs": {
+    "url": "https://github.com/blackCatYoung/dsh-photo-beauty/issues"
+  },
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "portrait",
+    "beauty",
+    "retouch",
+    "mediapipe",
+    "opencv"
+  ],
   "scripts": {
     "test": "node test/host-smoke.mjs && node test/client-smoke.mjs && node test/save-smoke.mjs && node test/multi-smoke.mjs && node test/ai-smoke.mjs",
     "test:engine": ".venv/bin/python -m unittest discover -s test",
